@@ -1,58 +1,53 @@
-# 🚀 Welcome to Z.ai Code Scaffold
+# 🪐 Planet - Interactive Orbital Project Showcase
 
-A modern, production-ready web application scaffold powered by cutting-edge technologies, designed to accelerate your development with [Z.ai](https://chat.z.ai)'s AI-powered coding assistance.
+An interactive web application featuring a beautiful orbital animation system that showcases various blockchain and fintech projects in a rotating, space-themed interface.
 
-## ✨ Technology Stack
+## ✨ Features
 
-This scaffold provides a robust foundation built with:
+### 🌌 Interactive Orbital System
+- **Rotating Animation** - Smooth continuous rotation of orbital rings and project cards
+- **Dual Orbit Layers** - Inner and outer orbital rings with different project sets
+- **Automatic Transitions** - Cards automatically cycle between two sets every 6 seconds
+- **Smooth Animations** - Powered by Framer Motion for fluid transitions and interactions
 
-### 🎯 Core Framework
-- **⚡ Next.js 15** - The React framework for production with App Router
-- **📘 TypeScript 5** - Type-safe JavaScript for better developer experience
-- **🎨 Tailwind CSS 4** - Utility-first CSS framework for rapid UI development
+### 🎯 Project Showcase
+- **8 Featured Projects** - Blockchain and fintech companies including Ripple, FutureVerse, XAO DAO, Xaman, Flare Network, XRP Toolkit, Digital Wealth Partners, and SpendTheBits
+- **Interactive Cards** - Click any project card to visit their website
+- **Responsive Design** - Optimized for both desktop and mobile viewing
+- **Visual Hierarchy** - Inner orbit projects have higher z-index for better visibility
 
-### 🧩 UI Components & Styling
-- **🧩 shadcn/ui** - High-quality, accessible components built on Radix UI
-- **🎯 Lucide React** - Beautiful & consistent icon library
-- **🌈 Framer Motion** - Production-ready motion library for React
-- **🎨 Next Themes** - Perfect dark mode in 2 lines of code
+### 🎨 Visual Design
+- **Space Theme** - Dark background with blue gradient central logo
+- **Orbital Visualization** - Dotted orbital paths with connecting lines to projects
+- **Hover Effects** - Cards scale and glow on interaction
+- **Modern UI** - Glass-morphism cards with backdrop blur effects
 
-### 📋 Forms & Validation
-- **🎣 React Hook Form** - Performant forms with easy validation
-- **✅ Zod** - TypeScript-first schema validation
+## 🚀 How It Works
 
-### 🔄 State Management & Data Fetching
-- **🐻 Zustand** - Simple, scalable state management
-- **🔄 TanStack Query** - Powerful data synchronization for React
-- **🌐 Axios** - Promise-based HTTP client
+### Animation System
+The application uses a sophisticated animation system built with React and Framer Motion:
 
-### 🗄️ Database & Backend
-- **🗄️ Prisma** - Next-generation Node.js and TypeScript ORM
-- **🔐 NextAuth.js** - Complete open-source authentication solution
+1. **Initial Load Sequence**
+   - Central logo appears with scale animation (1 second)
+   - Orbital rings fade in (1-1.2 seconds)
+   - Orbital dots appear in sequence (1.5-2.1 seconds)
+   - Project cards animate in (2+ seconds)
 
-### 🎨 Advanced UI Features
-- **📊 TanStack Table** - Headless UI for building tables and datagrids
-- **🖱️ DND Kit** - Modern drag and drop toolkit for React
-- **📊 Recharts** - Redefined chart library built with React and D3
-- **🖼️ Sharp** - High performance image processing
+2. **Continuous Rotation**
+   - The entire orbital system rotates continuously at 1 degree per 50ms
+   - Cards maintain their relative positions while the system rotates
+   - Connecting lines dynamically update to follow card positions
 
-### 🌍 Internationalization & Utilities
-- **🌍 Next Intl** - Internationalization library for Next.js
-- **📅 Date-fns** - Modern JavaScript date utility library
-- **🪝 ReactUse** - Collection of essential React hooks for modern development
+3. **Card Transitions**
+   - Every 6 seconds, cards transition out with a scale-down animation
+   - New set of 4 cards transitions in after 1 second
+   - Alternates between inner orbit projects (first 4) and outer orbit projects (last 4)
 
-## 🎯 Why This Scaffold?
-
-- **🏎️ Fast Development** - Pre-configured tooling and best practices
-- **🎨 Beautiful UI** - Complete shadcn/ui component library with advanced interactions
-- **🔒 Type Safety** - Full TypeScript configuration with Zod validation
-- **📱 Responsive** - Mobile-first design principles with smooth animations
-- **🗄️ Database Ready** - Prisma ORM configured for rapid backend development
-- **🔐 Auth Included** - NextAuth.js for secure authentication flows
-- **📊 Data Visualization** - Charts, tables, and drag-and-drop functionality
-- **🌍 i18n Ready** - Multi-language support with Next Intl
-- **🚀 Production Ready** - Optimized build and deployment settings
-- **🤖 AI-Friendly** - Structured codebase perfect for AI assistance
+### Technical Implementation
+- **React Hooks**: Uses `useState` and `useEffect` for state management and lifecycle
+- **Framer Motion**: Handles all animations including rotation, scaling, and transitions
+- **Dynamic Positioning**: Calculates rotated positions using trigonometric functions
+- **Responsive Design**: Adapts card sizes and spacing for different screen sizes
 
 ## 🚀 Quick Start
 
@@ -70,72 +65,46 @@ npm run build
 npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to see your application running.
+Open [http://localhost:3000](http://localhost:3000) to see the orbital project showcase.
 
-## 🤖 Powered by Z.ai
+## 🎯 Featured Projects
 
-This scaffold is optimized for use with [Z.ai](https://chat.z.ai) - your AI assistant for:
+The application showcases 8 blockchain and fintech projects:
 
-- **💻 Code Generation** - Generate components, pages, and features instantly
-- **🎨 UI Development** - Create beautiful interfaces with AI assistance  
-- **🔧 Bug Fixing** - Identify and resolve issues with intelligent suggestions
-- **📝 Documentation** - Auto-generate comprehensive documentation
-- **🚀 Optimization** - Performance improvements and best practices
+### Inner Orbit (First Set)
+1. **Ripple** - Modernize your financial infrastructure with Ripple
+2. **FutureVerse** - We power global brands to create content that moves
+3. **XAO DAO** - The world's first Decentralized Autonomous Organization for the XRP Ledger
+4. **Xaman** - The Leading Self-Custody Wallet. Secure Your XRP with Confidence
 
-Ready to build something amazing? Start chatting with Z.ai at [chat.z.ai](https://chat.z.ai) and experience the future of AI-powered development!
+### Outer Orbit (Second Set)
+5. **Flare Network** - DeFi, smart contracts, and seamless multi-chain blockchain interoperability
+6. **XRP Toolkit** - Manage your XRPL crypto assets with ease
+7. **Digital Wealth Partners** - Unlock the Future of Wealth with Digital Assets
+8. **SpendTheBits** - Seamless, secure, instant cross-currency payment solution
 
 ## 📁 Project Structure
 
 ```
 src/
-├── app/                 # Next.js App Router pages
+├── app/                 # Next.js App Router
+│   ├── page.tsx        # Main orbital showcase component
+│   ├── layout.tsx      # Root layout
+│   └── globals.css     # Global styles
 ├── components/          # Reusable React components
-│   └── ui/             # shadcn/ui components
+│   └── ui/             # UI components
 ├── hooks/              # Custom React hooks
 └── lib/                # Utility functions and configurations
 ```
 
-## 🎨 Available Features & Components
+## 🛠️ Technology Stack
 
-This scaffold includes a comprehensive set of modern web development tools:
-
-### 🧩 UI Components (shadcn/ui)
-- **Layout**: Card, Separator, Aspect Ratio, Resizable Panels
-- **Forms**: Input, Textarea, Select, Checkbox, Radio Group, Switch
-- **Feedback**: Alert, Toast (Sonner), Progress, Skeleton
-- **Navigation**: Breadcrumb, Menubar, Navigation Menu, Pagination
-- **Overlay**: Dialog, Sheet, Popover, Tooltip, Hover Card
-- **Data Display**: Badge, Avatar, Calendar
-
-### 📊 Advanced Data Features
-- **Tables**: Powerful data tables with sorting, filtering, pagination (TanStack Table)
-- **Charts**: Beautiful visualizations with Recharts
-- **Forms**: Type-safe forms with React Hook Form + Zod validation
-
-### 🎨 Interactive Features
-- **Animations**: Smooth micro-interactions with Framer Motion
-- **Drag & Drop**: Modern drag-and-drop functionality with DND Kit
-- **Theme Switching**: Built-in dark/light mode support
-
-### 🔐 Backend Integration
-- **Authentication**: Ready-to-use auth flows with NextAuth.js
-- **Database**: Type-safe database operations with Prisma
-- **API Client**: HTTP requests with Axios + TanStack Query
-- **State Management**: Simple and scalable with Zustand
-
-### 🌍 Production Features
-- **Internationalization**: Multi-language support with Next Intl
-- **Image Optimization**: Automatic image processing with Sharp
-- **Type Safety**: End-to-end TypeScript with Zod validation
-- **Essential Hooks**: 100+ useful React hooks with ReactUse for common patterns
-
-## 🤝 Get Started with Z.ai
-
-1. **Clone this scaffold** to jumpstart your project
-2. **Visit [chat.z.ai](https://chat.z.ai)** to access your AI coding assistant
-3. **Start building** with intelligent code generation and assistance
-4. **Deploy with confidence** using the production-ready setup
+- **⚡ Next.js 15** - React framework with App Router
+- **📘 TypeScript** - Type-safe JavaScript
+- **🎨 Tailwind CSS** - Utility-first CSS framework
+- **🌈 Framer Motion** - Animation library for smooth transitions
+- **🎯 Lucide React** - Icon library for UI elements
 
 ---
 
-Built with ❤️ for the developer community. Supercharged by [Z.ai](https://chat.z.ai) 🚀
+Built with ❤️ for showcasing blockchain and fintech innovation 🚀
