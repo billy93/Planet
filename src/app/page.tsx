@@ -115,17 +115,9 @@ export default function Home() {
       }
     }, 6000)
     
-    // Initial first transition
-    const firstTransition = setTimeout(() => {
-      if (showCards) {
-        startCardTransition()
-      }
-    }, 5000)
-    
     return () => {
       clearTimeout(timer1)
       clearTimeout(timer2)
-      clearTimeout(firstTransition)
       clearInterval(rotationInterval)
       clearInterval(transitionInterval)
     }
