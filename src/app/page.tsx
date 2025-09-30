@@ -278,7 +278,7 @@ export default function Home() {
         })}
 
         {/* Connecting Lines (Outside rotation container) */}
-        {showCards && getCurrentCards().map((project) => {
+        {/* {showCards && getCurrentCards().map((project) => {
           const rotatedPos = getRotatedPosition(project.position, rotation)
           return (
             <svg
@@ -308,7 +308,7 @@ export default function Home() {
               />
             </svg>
           )
-        })}
+        })} */}
       </div>
     </div>
   )
